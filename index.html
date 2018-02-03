@@ -48,6 +48,28 @@
     
 
     
+    <script>
+    
+    var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "images/1.jpg",
+    "images/2.gif",
+    "images/3.gif",
+    "images/4.gif"
+)
+    
+    
+    </script>
+    
+    
             <script>
             var image =  document.getElementById("imageOne");
 
