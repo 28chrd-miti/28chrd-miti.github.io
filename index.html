@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>CH R D</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="u-full-width">
+    <div class="row">
+
+        <h4 style="text-align: center; margin-top: 50px;color:gold">Champion Reveal</h4>
+        <img src="images/Dimi-yordle-card.jpg" style="margin-left: auto;margin-right: auto; display: block"/>
+        
+        
+        <h4 style="text-align: center; margin-top: 50px; color:gold">Special Present</h4>
+        <br>
+        <div id="gifdiv">
+            <img id ="imageOne" src ="images/1.jpg" onclick = "changeColor()" style="margin: auto;display: block"/>
+        </div>
+        <div style="height:200px;"></div>
+
+    </div>
+  </div>
+    
+
+    
+            <script>
+            var image =  document.getElementById("imageOne");
+
+            function changeColor()
+            {
+                if (image.getAttribute('src') == "images/1.jpg")
+                {
+                    image.src = "images/2.gif";
+                }
+                
+                else if (image.getAttribute('src') == "images/2.gif")
+                {
+                    image.src = "images/3.gif";
+                }
+                
+                else if (image.getAttribute('src') == "images/3.gif")
+                {
+                    image.src = "images/4.gif";
+                }
+                
+                
+            }
+        </script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
